@@ -11,13 +11,25 @@
         android:id="@+id/group_details_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="View Group Details" />
+        android:text="Review Your Group" />
 
     <Button
         android:id="@+id/preferences_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Set Preferences" />
+
+    <Button
+        android:id="@+id/create_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Group" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Open Groups" />
 
     <FrameLayout
         android:id="@+id/ad_container"

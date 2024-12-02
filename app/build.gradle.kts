@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    // Add the Google services Gradle plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -43,7 +45,20 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+
+
     implementation("com.google.android.gms:play-services-ads:23.5.0")
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
+
+    // Add the Firebase Analytics dependency
+    implementation("com.google.firebase:firebase-analytics")
+
+    // Add other Firebase dependencies here as needed
+    // Example: Realtime Database
+    implementation("com.google.firebase:firebase-database")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

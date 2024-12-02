@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399824661076",
+    "project_id": "datafrom436project",
+    "storage_bucket": "datafrom436project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399824661076:android:944f2c79b6d785716c9bc1",
+        "android_client_info": {
+          "package_name": "com.example.cmsc436groupproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBSAX0ew1-xh7LAB0PXsc1wGDmmd0CptQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -30,12 +30,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PreferencesActivity::class.java)
             startActivity(intent)
         }
+
+        // Link create_group button to CreateGroupActivity
+        val createGroupButton: Button = findViewById(R.id.create_group)
+        createGroupButton.setOnClickListener {
+            val intent = Intent(this, CreateGroupActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Link go button to GroupsActivity
+        val goButton: Button = findViewById(R.id.go)
+        goButton.setOnClickListener {
+            val intent = Intent(this, GroupsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupAdView() {
         adView = AdView(this).apply {
             setAdSize(AdSize.BANNER)
-            adUnitId = "ca-app-pub-3940256099942544/6300978111" // Sample AdMob ID
+            adUnitId = "ca-app-pub-3940256099942544/6300978111"
         }
 
         val adRequest = AdRequest.Builder().build()
